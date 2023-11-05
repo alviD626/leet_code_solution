@@ -1,31 +1,15 @@
-# class Solution:
-#     def longestCommonPrefix(self, strs: list[str]) -> str:
-     
-a =["my","myme","myis","mystakim"]
-# b = sorted(a)
-# print(b)
-
-# first = b[0]
-# print(first)
-
-# last = b[-1]
-# print(last)
-
-# c = min(len(first),len(last))
-# print(c)
-
-# ans = ""
-
-# for i in range(min(len(first),len(last))):
-#     if first[i] != last[i]:
-#         print(ans)
-#     ans += first[i]
-# print(ans)
-
-pre = a[0]
-print(pre)
-for i in a:
-    while not i.startswith(pre):
-        pre =pre[:-1]
-        print(pre)
-print(pre)
+class Solution(object):
+    def longestCommonPrefix(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: str
+        """
+        if not strs:
+            return -1
+        m, M, i = min(strs), max(strs), 0
+        for i in range(min(len(m),len(M))):
+            if m[i] != M[i]:
+                break
+        else:
+            i +=1
+        return m[:i]
