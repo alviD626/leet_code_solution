@@ -5,6 +5,7 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
+        
         if sorted(s) == sorted(t):
             return True
         else:
