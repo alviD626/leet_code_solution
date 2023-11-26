@@ -16,4 +16,6 @@ class Solution(object):
         l4 = ''.join(map(str,l2))
         l5 = int(l3)
         l6 = int(l4)
-        return l5 + l6
+        l7 = l5 + l6
+        l8 = list(map(int,str(l7)))
+        return l8
