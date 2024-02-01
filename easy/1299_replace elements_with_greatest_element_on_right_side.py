@@ -13,7 +13,7 @@ class Solution(object):
                 m = temp-m
             i -= 1
         return arr
-        class Solution(object):
+        # class Solution(object):
         # def replaceElements(self, arr):
         
         #     me,arr[-1] = arr[-1],-1
