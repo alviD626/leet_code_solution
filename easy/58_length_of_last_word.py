@@ -6,4 +6,5 @@ class Solution(object):
         """
         worlist = s.split()
         return len(worlist[-1])
-            
+        
+        # len(s.strip().split()[-1])
